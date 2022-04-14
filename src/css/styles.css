@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
+    background-color: hsl(218, 28%, 13%);
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+}
+
+.header .arte {
+    display: flex;
+}
+
+.header .menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.header .menu li a {
+    color: white;
+    font-weight: 400;
+}
+
+.header .menu li a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.header .menu li {
+    display: flex;
+    justify-content: center;
+    flex: 0.13;
+}
+
+/* PAINEL */
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 300px 200px;
+    gap: 30px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    background: url('../images/bg-curvy-desktop.svg') center bottom no-repeat, hsl(217, 28%, 15%);
+}
+
+.painel img {
+    width: 100%;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.painel p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 140px;
+}
+
+.btn {
+    color: white;
+    font-size: 14px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border-radius: 30px;
+    padding: 15px 0;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn:hover {
+    background-image: linear-gradient(hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+
+.btn.started {
+    width: 250px;
+}
+
+/* FEATURES */
+
+.features {
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 150px 250px;
+    gap: 75px;
+    color: white;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.features img {
+    height: 90px;
+}
+
+.features h3 {
+    font-weight: 700;
+}
+
+.features p {
+    line-height: 25px;
+}
+
+/* PRODUCTIVE */
+
+.productive {
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding: 0 140px;
+    gap: 60px;
+}
+
+.info-productive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.info-productive h2 {
+    padding-right: 50px;
+    line-height: 50px;
+}
+
+.info-productive p {
+    line-height: 25px;
+}
+
+.container-a {
+    display: inline;
+}
+
+.info-productive a {
+    padding-bottom: 5px;
+    color: hsl(176, 68%, 64%);
+    border-bottom: solid 1px;
+}
+
+.info-productive a:hover {
+    color: white;
+    
+}
+
+/* REVIEW */
+
+.review {
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px 100px;
+    gap: 50px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.review .aspas {
+    background: url('../images/bg-quotes.png');
+    width: 55px;
+    height: 45px;
+    transform: translate(-10px, -290px);
+}
+
+.review .client-card {
+    background-color: hsl(219, 30%, 18%);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px 20px;
+    gap: 25px;
+    font-size: 12px;
+    line-height: 20px;
+    z-index: 1;
+}
+
+.review .client-card .client {
+    display: flex;
+}
+
+.review .client-card .client .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 10px;
+} 
+
+.review .client-card .client img {
+    margin-right: 10px;
+    width: 30px;
+    border-radius: 50px;
+}
+
+.review .client-card .client h4 {
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.review .client-card .client p {
+    font-size: 8px;
+}
+
+.early {
+    background-color: hsl(218, 28%, 13%);
+}
+
+.early .early-card {
+    background-color: hsl(217, 28%, 15%);
+    margin: 0 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 40px 30px;
+    line-height: 25px;
+    transform: translateY(40%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 10px;
+}
+
+.early .early-card p {
+    font-size: 14px;
+    padding: 0 40px;
+}
+
+.early .early-card .input {
+    display: flex;
+    justify-content: space-around;
+}
+
+.early .early-card .input .btn-early {
+    width: 200px;
+}
+
+.early .early-card input {
+    width: 65%;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 200px 75px 75px;
+    color: white;
+}
+
+.footer .footer-info {
+    display: grid;
+    grid-template-columns: 2fr 1.4fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 25px;
+    height: 170px;
+}
+
+.footer .footer-info .location {
+    display: flex;
+    gap: 25px;
+}
+
+.footer .footer-info .location img {
+    height: 25px;
+    padding-top: 5px;
+}
+
+.footer .footer-info .location p {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+.footer .footer-info .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer .footer-info .contact a {
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+.footer .footer-info .about {
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer .footer-info .about a {
+    color: white;
+}
+
+.footer .footer-info .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .footer-info .social .social-cont a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.footer .footer-info .social .social-cont svg {
+    height: 15px;
+    width: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: hsl(216, 53%, 9%);
+    color: white;
+}
+
+.attribution a {
+    color: hsl(176, 68%, 64%);
+}

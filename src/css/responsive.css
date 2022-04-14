@@ -1,0 +1,206 @@
+@media (max-width: 1024px) {
+    .header .menu li {
+        flex: 1;
+    }
+    
+    .painel {
+        padding: 50px;
+        background-size: contain;
+    }
+
+    .features {
+        padding: 100px 50px;
+    }
+
+    .productive {
+        padding: 50px;
+        gap: 30px;
+    }
+
+    .productive .info-productive h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .productive .img-productive {
+        display: flex;
+        align-items: center;
+    }
+
+    .review {
+        padding: 50px 30%;
+        grid-template-columns: 1fr;
+    }
+
+    .review .aspas {
+        transform: translate(-10px, -800px);
+    }
+
+    .early .early-card {
+        margin: 0 30px;
+    }
+
+    .footer {
+        padding: 200px 75px 100px 75px;
+    }
+
+    .footer .footer-info {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 40px;
+    }
+
+    .footer .footer-info .about {
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .footer .footer-info .about a:nth-child(5){
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review {
+        padding: 50px 25%;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        padding: 20px;
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .header .arte {
+        width: 60%;
+    }
+
+    .header .menu {
+        gap: 0px;
+    }
+
+    .header .menu li {
+        flex: 1;
+    }
+
+    .painel {
+        padding: 40px;
+        margin-bottom: -350px;
+        background-position-y: 250px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .painel p {
+        padding: 0px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .features {
+        padding-top: 450px;
+        grid-template-columns: 1fr;
+    }
+
+    .productive {
+        grid-template-columns: 1fr;
+    }
+
+    .productive .info-productive h2 {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    .review {
+        padding: 10%;
+        gap: 30px;
+    }
+
+    .review .aspas {
+        transform: translate(-10px, -770px);
+    }
+
+    .review .client-card {
+        padding: 30px;
+    }
+
+    .early .early-card {
+        padding: 30px;
+    } 
+
+    .early .early-card h2 {
+        font-size: 20px;
+    }
+
+    .early .early-card p {
+        padding: 0 0;
+    }
+
+    .early .early-card .input {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .early .early-card .input * {
+        width: 100%;
+    }
+
+    .early .early-card .input .btn-early {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 200px 25px 50px 25px;
+    }
+
+    .footer .footer-info {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 40px;
+    }
+
+    .footer .footer-info .about {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .footer .footer-info .about a:nth-child(5){
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .footer .footer-info .social {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    .painel {
+        margin-bottom: -400px;
+        background-position-y: 250px;
+    }
+
+    .review {
+        position: relative;
+    }
+
+    .review .aspas {
+        position: absolute;
+        top: 765px;
+        left: 30px;
+    }
+
+    .early .early-card h2 {
+        line-height: 30px;
+    }
+
+    
+}
