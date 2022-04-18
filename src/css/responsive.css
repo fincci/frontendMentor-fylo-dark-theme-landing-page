@@ -27,15 +27,6 @@
         align-items: center;
     }
 
-    .review {
-        padding: 50px 30%;
-        grid-template-columns: 1fr;
-    }
-
-    .review .aspas {
-        transform: translate(-10px, -800px);
-    }
-
     .early .early-card {
         margin: 0 30px;
     }
@@ -64,7 +55,7 @@
 
 @media (max-width: 768px) {
     .review {
-        padding: 50px 25%;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -118,12 +109,12 @@
     }
 
     .review {
-        padding: 10%;
-        gap: 30px;
+        padding: 30px;
     }
 
     .review .aspas {
-        transform: translate(-10px, -770px);
+        top: -5px;
+        left: 20px;
     }
 
     .review .client-card {
@@ -186,16 +177,6 @@
     .painel {
         margin-bottom: -400px;
         background-position-y: 250px;
-    }
-
-    .review {
-        position: relative;
-    }
-
-    .review .aspas {
-        position: absolute;
-        top: 765px;
-        left: 30px;
     }
 
     .early .early-card h2 {

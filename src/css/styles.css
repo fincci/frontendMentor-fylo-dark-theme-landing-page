@@ -172,18 +172,21 @@ h2 {
     background-color: hsl(218, 28%, 13%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 100px 100px;
-    gap: 50px;
+    padding: 100px;
+    gap: 30px;
     color: white;
     font-weight: 300;
     letter-spacing: 1.5px;
+    position: relative;
 }
 
 .review .aspas {
     background: url('../images/bg-quotes.png');
     width: 55px;
     height: 45px;
-    transform: translate(-10px, -290px);
+    position: absolute;
+    top: 65px;
+    left: 90px;
 }
 
 .review .client-card {
@@ -346,4 +349,8 @@ h2 {
 
 .attribution a {
     color: hsl(176, 68%, 64%);
+}
+
+.attribution a:hover {
+    color: hsl(176, 100%, 50%);
 }
