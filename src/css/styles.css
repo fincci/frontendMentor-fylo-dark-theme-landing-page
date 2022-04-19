@@ -3,14 +3,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
-    background-color: hsl(218, 28%, 13%);
     margin: 0 auto;
 }
 
 /* HEADER */
 
+.cont-header {
+    width: 100%;
+    background-color: hsl(217, 28%, 15%);
+}
+
 .header {
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 70px;
@@ -46,7 +51,13 @@ body {
 
 /* PAINEL */
 
+.cont-painel {
+    background-color: hsl(217, 28%, 15%);
+}
+
 .painel {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -95,8 +106,14 @@ h2 {
 
 /* FEATURES */
 
+.cont-features {
+    background-color: hsl(217, 28%, 15%);
+}
+
 .features {
     background-color: hsl(218, 28%, 13%);
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 150px 250px;
@@ -126,8 +143,14 @@ h2 {
 
 /* PRODUCTIVE */
 
+.cont-productive {
+    background-color: hsl(217, 28%, 15%);
+}
+
 .productive {
     background-color: hsl(218, 28%, 13%);
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
@@ -168,8 +191,14 @@ h2 {
 
 /* REVIEW */
 
+.cont-review {
+    background-color: hsl(217, 28%, 15%);
+}
+
 .review {
     background-color: hsl(218, 28%, 13%);
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 100px;
@@ -226,8 +255,14 @@ h2 {
     font-size: 8px;
 }
 
+.cont-early {
+    background-color: hsl(217, 28%, 15%);
+}
+
 .early {
     background-color: hsl(218, 28%, 13%);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .early .early-card {
@@ -265,8 +300,13 @@ h2 {
     border-radius: 30px;
 }
 
-.footer {
+.cont-footer {
     background-color: hsl(216, 53%, 9%);
+}
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 200px 75px 75px;
     color: white;
 }
