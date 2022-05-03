@@ -1,8 +1,4 @@
-@media (max-width: 1024px) {
-    .header .menu li {
-        flex: 1;
-    }
-    
+@media (max-width: 1024px) {    
     .painel {
         padding: 50px;
         background-size: contain;
@@ -53,28 +49,66 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .review {
         grid-template-columns: 1fr;
     }
 }
 
+@media (max-width: 768px) {
+    .header {
+        grid-template-columns: 0.5fr 1.5fr;
+        padding: 5%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    .productive {
+        grid-template-columns: 1fr;
+    }
+
+    .review {
+        grid-template-columns: 1fr;
+    }
+
+    .early .early-card .input {
+        flex-direction: column;
+    }
+
+    .early .early-card .input {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .early .early-card .input {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 @media (max-width: 425px) {
     .header {
         padding: 20px;
-        grid-template-columns: 0.8fr 1.2fr;
     }
 
     .header .arte {
-        width: 60%;
+        width: 70%;
     }
 
     .header .menu {
-        gap: 0px;
+        gap: 10px;
     }
 
     .header .menu li {
-        flex: 1;
+        width: 40px;
     }
 
     .header .menu li a {
@@ -82,17 +116,18 @@
     }
 
     .cont-painel {
-        background: var(--bg-claro);
+        background: url(../images/bg-curvy-mobile.svg) center center no-repeat, linear-gradient(180deg, var(--bg-claro) 60%, var(--bg-escuro) 40%);
+        background-size: contain;
     }
 
     .painel {
         padding: 40px;
-        margin-bottom: -80%;
+        /* margin-bottom: -80%; */
     }
 
     h2 {
-        font-size: 25px;
-        line-height: 50px;
+        font-size: 20px;
+        line-height: 40px;
     }
 
     .painel p {
@@ -106,7 +141,7 @@
     }
 
     .features {
-        padding-top: 450px;
+        /* padding-top: 450px; */
         grid-template-columns: 1fr;
     }
 
@@ -144,11 +179,6 @@
         padding: 0 0;
     }
 
-    .early .early-card .input {
-        flex-direction: column;
-        gap: 20px;
-    }
-
     .early .early-card .input * {
         width: 100%;
     }
@@ -184,11 +214,18 @@
     }
 }
 
+@media (max-width: 360px) {
+    .cont-painel {
+        background: url(../images/bg-curvy-mobile.svg) center center no-repeat, linear-gradient(180deg, var(--bg-claro) 58%, var(--bg-escuro) 42%);
+        background-size: contain;
+    }
+}
+
 @media (max-width: 320px) {
-    .painel {
+    /* .painel {
         margin-bottom: -400px;
         background-position-y: 250px;
-    }
+    } */
 
     .early .early-card h2 {
         line-height: 30px;

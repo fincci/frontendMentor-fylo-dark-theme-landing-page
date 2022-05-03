@@ -6,12 +6,12 @@
     --bg-card: hsl(219, 30%, 18%);
     --bg-footer: hsl(216, 53%, 9%);
     --max-size-content: 1440px;
-    --font-sans: 'Open Sans', sans-serif;
-    --font-rale: 'Raleway', sans-serif;
+    --font-first: 'Open Sans', sans-serif;
+    --font-second: 'Raleway', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-first);
 }
 
 /* HEADER */
@@ -29,17 +29,18 @@ body {
     padding: 70px;
     align-items: center;
     background-color: var(--bg-claro);
-    font-family: var(--font-rale);
+    font-family: var(--font-second);
 }
 
 .header .arte {
     display: flex;
+    width: fit-content;
 }
 
 .header .menu {
     display: flex;
     justify-content: flex-end;
-    gap: 50px;
+    gap: 5%;
 }
 
 .header .menu li a {
@@ -54,15 +55,18 @@ body {
 
 .header .menu li {
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex: 0.13;
+    width: 60px;
+    
 }
 
 /* PAINEL */
 
 .cont-painel {
     background-color:  var(--bg-claro);
-    position: relative;
+    background: url(../images/bg-curvy-desktop.svg) center bottom no-repeat var(--bg-claro);
+    background-size: contain;
 }
 
 .painel {
@@ -71,15 +75,12 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0 300px 200px;
+    padding: 0 20% 200px;
     gap: 30px;
     text-align: center;
     color: white;
     align-items: center;
-}
-
-.painel > * {
-    z-index: 1;
+    height: 10%;
 }
 
 .painel img {
@@ -87,7 +88,7 @@ body {
 }
 
 h2 {
-    font-family: var(--font-rale);
+    font-family: var(--font-second);
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
@@ -97,7 +98,7 @@ h2 {
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
-    padding: 0 140px;
+    padding: 0 15%;
 }
 
 .btn {
@@ -107,7 +108,8 @@ h2 {
     border-radius: 30px;
     padding: 15px 0;
     font-weight: 700;
-    font-family: var(--font-rale);
+    font-family: var(--font-second);
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -118,17 +120,7 @@ h2 {
     width: 250px;
 }
 
-.curvy {
-    position: absolute;
-    transform: translateY(-99%);
-    width: 100%;
-}
-
 /* FEATURES */
-
-/* .cont-features {
-    position: relative;
-} */
 
 .cont-features {
     background-color: var(--bg-escuro);
@@ -144,8 +136,6 @@ h2 {
     color: white;
 }
 
-
-
 .features div {
     display: flex;
     flex-direction: column;
@@ -159,7 +149,7 @@ h2 {
 }
 
 .features h3 {
-    font-family: var(--font-rale);
+    font-family: var(--font-second);
     font-weight: 700;
 }
 
@@ -209,9 +199,9 @@ h2 {
     border-bottom: solid 1px;
 }
 
-.info-productive a:hover {
+.info-productive a:hover, .info-productive a:hover use {
     color: white;
-    
+    fill: white;
 }
 
 /* REVIEW */
@@ -289,7 +279,7 @@ h2 {
 
 .early .early-card {
     background-color: var(--bg-claro);
-    margin: 0 300px;
+    margin: 0 20%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -313,11 +303,11 @@ h2 {
 }
 
 .early .early-card .input .btn-early {
-    width: 200px;
+    width: 30%;
 }
 
 .early .early-card input {
-    width: 65%;
+    width: 60%;
     padding: 15px 30px;
     border-radius: 30px;
 }
