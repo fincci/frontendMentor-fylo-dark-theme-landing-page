@@ -38,7 +38,7 @@
       <h2>All your files in one secure location, accessible anywhere.</h2>
       <p>Fylo stores all your most important files in one secure location. Access them wherever
         you need, share and collaborate with friends family, and co-workers.</p>
-      <button class="btn started">Get Started</button>
+      <button id="btnStarted" class="btn started">Get Started</button>
     </div>
   </section>
   
@@ -156,7 +156,8 @@
           questions, our support team would be happy to help you.</p>
         <div class="input">
           <input type="email" name="email" id="email" value="" placeholder="email@example.com">
-          <button class="btn btn-early">Get Started For Free</button>
+          <button id="btnFree" class="btn btn-early">Get Started For Free</button>
+          <span class="invalid hide">Please enter a valid email address</span>
         </div>
       </div>
     </div>
@@ -228,6 +229,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Filipe Carvalho</a>.
   </p>
+
+  <script src="src/js/index.js"></script>
 </body>
 
 </html>

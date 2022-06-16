@@ -64,7 +64,6 @@ body {
 /* PAINEL */
 
 .cont-painel {
-    background-color:  var(--bg-claro);
     background: url(../images/bg-curvy-desktop.svg) center bottom no-repeat var(--bg-claro);
     background-size: contain;
 }
@@ -300,6 +299,19 @@ h2 {
 .early .early-card .input {
     display: flex;
     justify-content: space-around;
+    position: relative;
+}
+
+.early .early-card .input .invalid{
+    position: absolute;
+    bottom: -25px;
+    left: 7%;
+    font-size: 10px;
+    color: hsl(0, 100%, 63%);
+}
+
+.hide {
+    display: none;
 }
 
 .early .early-card .input .btn-early {
